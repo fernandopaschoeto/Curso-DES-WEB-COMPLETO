@@ -1,0 +1,67 @@
+.item1 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item2 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item3 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item1 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+.item2 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+.item3 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+.item4 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+.item5 {
+  background: orange;
+  margin-bottom: 2px;
+}
+
+.item1 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item2 {
+  background: yellow;
+  margin-bottom: 2px;
+}
+
+.item3 {
+  background: red;
+  margin-bottom: 2px;
+}
+
+.item4 {
+  background: blue;
+  margin-bottom: 2px;
+}
+
+/*16.6666666667%*/
+.item10 {
+  width: 16.6666666667%;
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

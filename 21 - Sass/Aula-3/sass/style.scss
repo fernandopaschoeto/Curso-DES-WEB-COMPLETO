@@ -1,0 +1,48 @@
+@use "sass:math";
+
+
+@for $i from 1 through 3 {
+   .item#{$i} {
+       background: green;
+       margin-bottom: 2px;
+   }
+}
+
+$contador: 1;
+@while $contador <= 5 {
+    .item#{$contador} {
+        background: orange;
+        margin-bottom: 2px;
+    }
+    $contador: $contador + 1;
+} 
+    
+$lista: green, yellow, red, blue;
+$contador: 1;
+@each $cor in $lista {
+    .item#{$contador} {
+        background: $cor;
+        margin-bottom: 2px;
+    }
+    $contador: $contador + 1;
+}
+
+
+
+$total: 12;
+
+@function largura-coluna($coluna: 2){
+    @return percentage(math.div($coluna, $total));
+}
+
+$resultado: largura-coluna(2);
+
+/*#{$resultado}*/
+
+
+
+.item10{
+    width: #{$resultado};
+    background-color: red;
+}
+

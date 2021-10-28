@@ -1,6 +1,18 @@
 
 [https://github.com/fernandopaschoeto/Curso-DES-WEB-COMPLETO/projects/1] (Plano de estudo.)
 
+## Seção 20 API com Slim Framework
+
+- [ ] 532. O que irei aprender? API com Slim Framework
+- [ ] 533. Entendendo requisições e API
+- [ ] 534. Rotas com Slim
+- [ ] 535. Tipos de requisições
+- [ ] 536. Serviços e dependências
+- [ ] 537. Middleware, respostas e database
+- [ ] 538. Criando API
+- [ ] 539. Finalizando rotas
+- [ ] 540. Finalizando API
+
 ## Seção 21 Sass
 
 - [x] 541. O que irei aprender? sass

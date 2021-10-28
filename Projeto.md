@@ -1,10 +1,13 @@
+
+[https://github.com/fernandopaschoeto/Curso-DES-WEB-COMPLETO/projects/1] (Plano de estudo.)
+
 ## Seção 21 Sass
 
-- [ ] 541. O que irei aprender? sass
-- [ ] 542. Introdução ao Sass
-- [ ] 543. Instalação: Windows e Mac
-- [ ] 544. Instalando plugins
-- [ ] 545. Criando projeto com Sass
+- [x] 541. O que irei aprender? sass
+- [x] 542. Introdução ao Sass
+- [x] 543. Instalação: Windows e Mac
+- [x] 544. Instalando plugins
+- [x] 545. Criando projeto com Sass
 - [ ] 546. Aninhamento, variáveis e interpolação
 - [ ] 547. for, while, each, funções e importações
 - [ ] 548. Mixin, Herança e diretivas de controle

@@ -1,0 +1,12 @@
+sass arquivo.sass arquivo.scss 
+    Converte de sass para scss. 
+
+sass arquivo.scss arquivo.css
+    converte de scss para css. 
+
+sass --watch arquivo.scss:arquivo.css 
+    monitora os arquivos e faz a conversão automaticamente. 
+
+sass --watch sass:css
+    monitora um diretório para outro.
+    

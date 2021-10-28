@@ -1,0 +1,57 @@
+/*
+Adicionando comentários. 
+*/
+
+/* Alinhamento */
+
+#conteudo{
+    background: green;
+    padding: 15px;
+    h1, h2 {
+        color: red;
+    }
+    a {
+        color: black;
+    }
+}
+
+/* Seletor pai */
+
+a{
+    color: red;
+    &:hover{
+        color:yellow;
+    }
+}
+
+/* Variáveis */
+
+$variavel: valor;
+$cor-titulo: red;
+$tamanho-titulo: 15px;
+
+h2{
+    color: $cor-titulo;
+    size: $tamanho-titulo;
+}
+
+$cor-padrao: red;
+
+#rodape{
+    $cor-padrao: green;
+    background-color: $cor-padrao;
+}
+
+h3{
+    color: $cor-padrao;
+}
+
+/* Interpolação */
+
+$classe: red;
+$color: color;
+
+.red{
+    #{$color}: $classe;
+}
+

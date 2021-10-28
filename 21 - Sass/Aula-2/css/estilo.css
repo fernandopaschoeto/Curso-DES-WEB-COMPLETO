@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*
+Adicionando comentários. 
+*/
+/* Alinhamento */
+#conteudo {
+  background: green;
+  padding: 15px;
+}
+#conteudo h1, #conteudo h2 {
+  color: red;
+}
+#conteudo a {
+  color: black;
+}
+
+/* Seletor pai */
+a {
+  color: red;
+}
+a:hover {
+  color: yellow;
+}
+
+/* Variáveis */
+h2 {
+  color: red;
+  size: 15px;
+}
+
+#rodape {
+  background-color: green;
+}
+
+h3 {
+  color: red;
+}
+
+/* Interpolação */
+.red {
+  color: red;
+}
+
+/*# sourceMappingURL=estilo.css.map */

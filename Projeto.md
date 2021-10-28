@@ -8,7 +8,7 @@
 - [x] 543. Instalação: Windows e Mac
 - [x] 544. Instalando plugins
 - [x] 545. Criando projeto com Sass
-- [ ] 546. Aninhamento, variáveis e interpolação
+- [x] 546. Aninhamento, variáveis e interpolação
 - [ ] 547. for, while, each, funções e importações
 - [ ] 548. Mixin, Herança e diretivas de controle
 

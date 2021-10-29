@@ -1,0 +1,13 @@
+{
+    "name": "vendor/a-p-i-slim-framework",
+    "description": "Description of project API-SlimFramework.",
+    "authors": [
+        {
+            "name": "Fernando Paschoeto",
+            "email": "fernandopaschoeto@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "3.*"
+    }
+}

@@ -1,9 +1,17 @@
 @import 'variaveis.scss';
 @import 'mixin.scss';
 
-@for $i from 1 to 4 {
-    .item-#{$i}{
-        background-color: $cor-primaria;
-        margin-bottom: 2px;
-    }
+@mixin titulo($cor:white, $cor-bg:green) {
+    background-color: $cor-bg;
+    color: $cor;
+    padding: 10px 5px;
+}
+
+h1 {
+
+    @include titulo(yellow, )
+}
+
+h2 {
+    @include titulo(white, black)
 }

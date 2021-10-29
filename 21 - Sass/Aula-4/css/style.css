@@ -1,16 +1,13 @@
-.item-1 {
+h1 {
   background-color: green;
-  margin-bottom: 2px;
+  color: yellow;
+  padding: 10px 5px;
 }
 
-.item-2 {
-  background-color: green;
-  margin-bottom: 2px;
-}
-
-.item-3 {
-  background-color: green;
-  margin-bottom: 2px;
+h2 {
+  background-color: black;
+  color: white;
+  padding: 10px 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,8 +21,8 @@
 - [x] 544. Instalando plugins
 - [x] 545. Criando projeto com Sass
 - [x] 546. Aninhamento, variáveis e interpolação
-- [ ] 547. for, while, each, funções e importações
-- [ ] 548. Mixin, Herança e diretivas de controle
+- [x] 547. for, while, each, funções e importações
+- [x] 548. Mixin, Herança e diretivas de controle
 
 ## Seção 22 IONIC
 

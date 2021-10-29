@@ -10,4 +10,12 @@ h2 {
   padding: 10px 5px;
 }
 
+.pai, .mae, .heranca {
+  color: brown;
+}
+
+.mae, .heranca {
+  background-color: blueviolet;
+}
+
 /*# sourceMappingURL=style.css.map */

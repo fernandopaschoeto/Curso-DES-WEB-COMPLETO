@@ -1,6 +1,6 @@
 @import 'variaveis.scss';
 @import 'mixin.scss';
-
+/*
 @mixin titulo($cor:white, $cor-bg:green) {
     background-color: $cor-bg;
     color: $cor;
@@ -16,18 +16,49 @@ h2 {
     @include titulo(white, black)
 }
 
-.pai{
+%pai{
     color: brown;
 }
 
-.mae {
-    @extend .pai;
+%mae {
+    @extend %pai;
     background-color: blueviolet
 }
 
 .heranca {
-    @extend .mae;
+    @extend %mae;
 }
 
+/* O simbolo de porcentagem é usado como placeholder para que não sejam criadas no css.  */
+/*
+$cor: red;
+@if ($cor == green) {
+    .senaose{
+        color: $cor
+    }
+}@else if $cor == red {
+    .senaose{
+        color: $cor
+    }
+}@else{
+    .senaose{
+        color: $cor
+    }
+}
+*/
+@mixin tema($tema:padrao) {
+    @if ($tema == natal){
+        background-color: red;
+        color: white;
+    } @else if ($tema == blackfridey){
+        background-color: black;
+        color: white;
+    } else {
+        background-color: white;
+        color: black;
+    }
+}
 
-
+body {
+    @include tema(blackfridey)
+}

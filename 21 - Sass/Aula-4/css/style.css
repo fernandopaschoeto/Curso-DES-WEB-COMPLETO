@@ -1,21 +1,57 @@
+@charset "UTF-8";
+/*
+@mixin titulo($cor:white, $cor-bg:green) {
+    background-color: $cor-bg;
+    color: $cor;
+    padding: 10px 5px;
+}
+
 h1 {
-  background-color: green;
-  color: yellow;
-  padding: 10px 5px;
+
+    @include titulo(yellow, )
 }
 
 h2 {
+    @include titulo(white, black)
+}
+
+%pai{
+    color: brown;
+}
+
+%mae {
+    @extend %pai;
+    background-color: blueviolet
+}
+
+.heranca {
+    @extend %mae;
+}
+
+/* O simbolo de porcentagem é usado como placeholder para que não sejam criadas no css.  */
+/*
+$cor: red;
+@if ($cor == green) {
+    .senaose{
+        color: $cor
+    }
+}@else if $cor == red {
+    .senaose{
+        color: $cor
+    }
+}@else{
+    .senaose{
+        color: $cor
+    }
+}
+*/
+body {
   background-color: black;
   color: white;
-  padding: 10px 5px;
 }
-
-.pai, .mae, .heranca {
-  color: brown;
-}
-
-.mae, .heranca {
-  background-color: blueviolet;
+body else {
+  background-color: white;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,67 +1,73 @@
-.item1 {
+.col1 {
+  width: 8.3333333333%;
   background: green;
-  margin-bottom: 2px;
 }
 
-.item2 {
-  background: green;
-  margin-bottom: 2px;
-}
-
-.item3 {
-  background: green;
-  margin-bottom: 2px;
-}
-
-.item1 {
-  background: orange;
-  margin-bottom: 2px;
-}
-
-.item2 {
-  background: orange;
-  margin-bottom: 2px;
-}
-
-.item3 {
-  background: orange;
-  margin-bottom: 2px;
-}
-
-.item4 {
-  background: orange;
-  margin-bottom: 2px;
-}
-
-.item5 {
-  background: orange;
-  margin-bottom: 2px;
-}
-
-.item1 {
-  background: green;
-  margin-bottom: 2px;
-}
-
-.item2 {
-  background: yellow;
-  margin-bottom: 2px;
-}
-
-.item3 {
-  background: red;
-  margin-bottom: 2px;
-}
-
-.item4 {
-  background: blue;
-  margin-bottom: 2px;
-}
-
-/*16.6666666667%*/
-.item10 {
+.col2 {
   width: 16.6666666667%;
-  background-color: red;
+  background: green;
+}
+
+.col3 {
+  width: 25%;
+  background: green;
+}
+
+.col4 {
+  width: 33.3333333333%;
+  background: green;
+}
+
+.col5 {
+  width: 41.6666666667%;
+  background: green;
+}
+
+.col6 {
+  width: 50%;
+  background: green;
+}
+
+.col7 {
+  width: 58.3333333333%;
+  background: green;
+}
+
+.col8 {
+  width: 66.6666666667%;
+  background: green;
+}
+
+.col9 {
+  width: 75%;
+  background: green;
+}
+
+.col10 {
+  width: 83.3333333333%;
+  background: green;
+}
+
+.col11 {
+  width: 91.6666666667%;
+  background: green;
+}
+
+.col12 {
+  width: 100%;
+  background: green;
+}
+
+.alerta {
+  background-color: #cc9e00;
+}
+
+.item1 {
+  background-color: #996300;
+}
+
+.item2 {
+  background-color: #00e600;
 }
 
 /*# sourceMappingURL=style.css.map */

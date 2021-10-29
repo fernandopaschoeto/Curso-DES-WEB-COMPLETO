@@ -1,0 +1,9 @@
+@import 'variaveis.scss';
+@import 'mixin.scss';
+
+@for $i from 1 to 4 {
+    .item-#{$i}{
+        background-color: $cor-primaria;
+        margin-bottom: 2px;
+    }
+}

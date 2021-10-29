@@ -1,0 +1,66 @@
+@use "sass:math";
+
+$total: 12;
+$i: 1;
+
+@function largura-coluna($coluna: 2){
+    @return percentage(math.div($coluna, $total));
+}
+
+
+
+@for $i from 1 through 12 {
+    .col#{$i} {
+        width: largura-coluna($i);
+        background: green;
+    }
+ }
+
+/*
+
+@for $i from 1 through 3 {
+   .item#{$i} {
+       background: green;
+       margin-bottom: 2px;
+   }
+}
+
+$contador: 1;
+@while $contador <= 5 {
+    .item#{$contador} {
+        background: orange;
+        margin-bottom: 2px;
+    }
+    $contador: $contador + 1;
+} 
+    
+$lista: green, yellow, red, blue;
+$contador: 1;
+@each $cor in $lista {
+    .item#{$contador} {
+        background: $cor;
+        margin-bottom: 2px;
+    }
+    $contador: $contador + 1;
+}
+
+
+
+$total: 12;
+
+@function largura-coluna($coluna: 2){
+    @return percentage(math.div($coluna, $total));
+}
+
+$resultado: largura-coluna(2);
+
+.item10{
+    width: #{$resultado};
+    background-color: red;
+}
+
+*/
+
+/*#{$resultado}*/
+
+

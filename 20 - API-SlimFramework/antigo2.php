@@ -7,6 +7,8 @@ require 'vendor/autoload.php';
 
 $app = new \Slim\App;
 
+
+
 // padrão psr7
 $app->get('/postagens', function (Request $request, Response $response) {
 

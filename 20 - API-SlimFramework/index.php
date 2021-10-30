@@ -1,40 +1,24 @@
 <?php
 
+/* 
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+ */
+
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
 require 'vendor/autoload.php';
 
-$app = new \Slim\App;
+$app = new \Slim\App([
+    'settings' => [
+        'displayErrorDetails' => true
+    ]
+]);
 
-class Servico{
-    
-}
+$app->get('/postagens', function(Request $request, Response $response){
+    $response->write('Ação principal Postagens. ');
 
-// usando injessão de dependência para adicionar uma classe externa a rota do slim usando pimple.
-$container = $app->getContainer();
-$container['servico'] = function(){
-  return new Servico;  
-};
-$app->get('/servico', function(Request $request, Response $response){
-    
-    $servico = $this->get('servico');
-    var_dump($servico);
 });
-/*
-$container = $app->getContainer();
-$container['View'] = function(){
-    return new MyApp\View;
-};
-
-$app->get('/usuario', '\MyApp\Controllers\Home:index');
-*/
-
-$container = $app->getContainer();
-$container['Home'] = function(){
-    return new MyApp\Controllers\Home(new MyApp\View);
-};
-
-$app->get('/usuario', 'Home:index');
 
 $app->run();

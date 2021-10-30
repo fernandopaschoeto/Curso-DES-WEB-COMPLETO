@@ -7,39 +7,34 @@ require 'vendor/autoload.php';
 
 $app = new \Slim\App;
 
-// padrão psr7
-$app->get('/postagens', function (Request $request, Response $response) {
+class Servico{
+    
+}
 
-    $response->getBody()->write("Escrever no corpo da resposta.");
-
-    return $response;
+// usando injessão de dependência para adicionar uma classe externa a rota do slim usando pimple.
+$container = $app->getContainer();
+$container['servico'] = function(){
+  return new Servico;  
+};
+$app->get('/servico', function(Request $request, Response $response){
+    
+    $servico = $this->get('servico');
+    var_dump($servico);
 });
+/*
+$container = $app->getContainer();
+$container['View'] = function(){
+    return new MyApp\View;
+};
 
-$app->post('/usuarios/adiciona', function (Request $request, Response $response) {
+$app->get('/usuario', '\MyApp\Controllers\Home:index');
+*/
 
-    $post = $request->getParsedBody();
+$container = $app->getContainer();
+$container['Home'] = function(){
+    return new MyApp\Controllers\Home(new MyApp\View);
+};
 
-    $nome = $post['nome'];
-    $email = $post['email'];
-
-    // salvar em banco de dados por exemplo.  
-
-    return $response->getBody()->write($nome . ' - ' . $email);
-});
-
-$app->put('/usuarios/atualiza/{id}', function (Request $request, Response $response) {
-
-    $id = $post['id'];
-    $nome = $post['nome'];
-    $email = $post['email'];
-
-    return $response->getBody()->write('Sucesso ao atualizar');
-});
-
-$app->delete('/usuarios/remove/{id}', function (Request $request, Response $response) {
-
-    $id = $request->getAttribute('id');
-    return $response->getBody()->write("Sucesso ao remover usuario $id");
-});
+$app->get('/usuario', 'Home:index');
 
 $app->run();

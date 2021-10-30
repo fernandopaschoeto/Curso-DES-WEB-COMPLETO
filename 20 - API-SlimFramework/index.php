@@ -1,50 +1,45 @@
 <?php
 
+use \Psr\Http\Message\ServerRequestInterface as Request;
+use \Psr\Http\Message\ResponseInterface as Response;
+
 require 'vendor/autoload.php';
 
 $app = new \Slim\App;
 
-$app->get('/postagens/[{ano}[/{mes}]]', function ($request, $response) {
-    $ano = $request->getAttribute('ano');
-    $mes = $request->getAttribute('mes');
+// padrão psr7
+$app->get('/postagens', function (Request $request, Response $response) {
 
-    echo 'Listagem de postagem ' . $ano . ' ' . $mes;
+    $response->getBody()->write("Escrever no corpo da resposta.");
+
+    return $response;
 });
 
-$app->get('/usuarios/[{id}]', function ($request, $response) {
+$app->post('/usuarios/adiciona', function (Request $request, Response $response) {
+
+    $post = $request->getParsedBody();
+
+    $nome = $post['nome'];
+    $email = $post['email'];
+
+    // salvar em banco de dados por exemplo.  
+
+    return $response->getBody()->write($nome . ' - ' . $email);
+});
+
+$app->put('/usuarios/atualiza/{id}', function (Request $request, Response $response) {
+
+    $id = $post['id'];
+    $nome = $post['nome'];
+    $email = $post['email'];
+
+    return $response->getBody()->write('Sucesso ao atualizar');
+});
+
+$app->delete('/usuarios/remove/{id}', function (Request $request, Response $response) {
+
     $id = $request->getAttribute('id');
-
-    echo 'Listagem de usuarios com ID ' . $id;
+    return $response->getBody()->write("Sucesso ao remover usuario $id");
 });
 
-// Dentro das chaves é possível atribuir quaisquer itens usando expressão regular
-// após os :. no exemplo foi usado * que aceitaria qualquer coisa. 
-
-$app->get('/lista/{item:.*}', function ($request, $response) {
-    $item = $request->getAttribute('item');
-
-    //echo $item;
-    var_dump(explode("/", $item));
-});
-
-$app->get('/blog/postagens/{id}', function ($request, $response) {
-    echo "Listar postagem para um id $id";
-})->setName('blog');
-
-$app->get('/meusite', function ($request, $response) {
-    $retorno = $this->get("router")->pathFor("blog", ["id" => "5"]);
-
-    echo $retorno;
-});
-
-$app->group('/v1', function () {
-    $this->get('/usuarios', function ($request, $response) {
-        echo 'Listagem de usuarios ';
-    });
-
-    $this->get('/postagens', function ($request, $response) {
-        echo 'Listagem de postagens ';
-    });
-});
-
-$app->Run();
+$app->run();

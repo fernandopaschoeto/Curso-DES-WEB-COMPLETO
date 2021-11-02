@@ -11,6 +11,8 @@ return function (App $app) {
     $app->options('/{routes:.+}', function ($request, $response, $args) {
         return $response;
     });
+    
+    require __DIR__ . '/routes/autenticacao.php';
 
     $app->group('/api/v1', function () {
         $this->get('/produtos/lista', function (Request $request, Response $response) {

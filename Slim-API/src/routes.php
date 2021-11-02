@@ -8,6 +8,10 @@ use App\Models\Produto;
 return function (App $app) {
     $container = $app->getContainer();
 
+    $app->options('/{routes:.+}', function ($request, $response, $args) {
+        return $response;
+    });
+
     $app->group('/api/v1', function () {
         $this->get('/produtos/lista', function (Request $request, Response $response) {
             $produtos = Produto::get();
@@ -37,6 +41,11 @@ return function (App $app) {
             $produto = Produto::create($dados);
             return $response->withJson($produtos);
         });
+    });
+
+    $app->map(['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], '/{routes:.+}', function ($req, $res) {
+        $handler = $this->notFoundHandler; // handle using the default Slim page not found handler
+        return $handler($req, $res);
     });
 };
 /*

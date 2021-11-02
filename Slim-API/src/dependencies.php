@@ -24,7 +24,7 @@ return function (App $app) {
 
     // db 
     $container['db'] = function ($c) {   
-        $capsule = new Illuminate\Database\Capsule;
+        $capsule = new Capsule;
         $capsule->addConnection($c->get('settings')['db']);
         $capsule->setAsGlobal();
         $capsule->bootEloquent();

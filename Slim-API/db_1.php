@@ -1,17 +1,14 @@
 <?php
-
-
-
-  if (PHP_SAPI != 'cli') {
-  exit('Rodar via cli');
-  }
-
-
+/*
 use Slim\App;
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/src/dependencies.php';
+
+  if (PHP_SAPI != 'cli') {
+  exit('Rodar via cli');
+  }
 
 session_start();
 
@@ -19,10 +16,12 @@ session_start();
 $settings = require __DIR__ . '/src/settings.php';
 $app = new \Slim\App($settings);
 
+$container = $app->getContainer();
+
 $db = $container->get('db');
 var_dump($db);
 
-/*
+
 $container = $app->getContainer();
 $container['db'] = function () {
     $capsule = new Capsule;
@@ -54,9 +53,7 @@ $container['db'] = function () {
   $table->date('dt_criacao');
 
   });
- * 
- */
-/*
+
 $schema = $db->schema;
 $tabela = 'produtos';
 
@@ -69,5 +66,6 @@ $table->decimal('preco', 11, 2);
 $table->string('fabricante', 60);
 $table->date('dt_criacao');
 });
-
- */
+*/
+    
+    ?>

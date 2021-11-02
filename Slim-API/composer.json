@@ -10,11 +10,26 @@
     "require": {
         "slim/slim": "3.*",
         "illuminate/database": "*",
-        "slim/slim-skeleton": "*"
+        "slim/slim-skeleton": "*",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17"
+    },
+        "require-dev": {
+        "phpunit/phpunit": ">=5.0"
     },
     "autoload": {
         "psr-4": {
-            "MyApp\\": "src/MyApp"
+            "MyApp\\": "src/MyApp",
+            "Tests\\": "tests/",
+            "App\\": "App/"
         }
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "test": "phpunit"
     }
 }

@@ -21,7 +21,7 @@ $app->post('/api/token', function ($request, $response, $args) {
             'chave' => $chaveDeAcesso
         ]);
     }
-    
+    var_dump($usuario);
     return "Erro!";
 
 });

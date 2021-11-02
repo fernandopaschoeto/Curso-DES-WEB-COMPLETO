@@ -13,7 +13,8 @@
         "slim/slim-skeleton": "*",
         "slim/php-view": "^2.0",
         "monolog/monolog": "^1.17",
-        "firebase/php-jwt": "*"
+        "firebase/php-jwt": "*",
+        "tuupola/slim-jwt-auth": "*"
     },
         "require-dev": {
         "phpunit/phpunit": ">=5.0"

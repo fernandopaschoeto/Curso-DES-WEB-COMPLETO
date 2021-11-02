@@ -1,0 +1,20 @@
+{
+    "name": "vendor/a-p-i-slim-framework",
+    "description": "Description of project API-SlimFramework.",
+    "authors": [
+        {
+            "name": "Fernando Paschoeto",
+            "email": "fernandopaschoeto@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "3.*",
+        "illuminate/database": "*",
+        "slim/slim-skeleton": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "src/MyApp"
+        }
+    }
+}

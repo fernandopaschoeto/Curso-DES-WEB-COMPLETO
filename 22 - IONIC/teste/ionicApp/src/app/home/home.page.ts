@@ -14,12 +14,18 @@ export class HomePage implements OnInit {
 
   ngOnInit() {
   }
-
+  public pesquisa; 
   public titulo: String = "Meu primeiro App";
+  public resultado: String = "";
 
   public imagemRandomica: String = "https://cdn.stocksnap.io/img-thumbs/960w/mushroom-fungus_IJ0B3RFSXX.jpg";
   public imagemLocal: String = "../assets/icone-celular.png";
 
+
+
+  public recuperar(): void {
+    this.resultado = this.pesquisa;
+  }
   public atualiza(): void {
     this.titulo = "Texto alterado. ";
   }
@@ -27,6 +33,8 @@ export class HomePage implements OnInit {
     this.titulo = "Meu primeiro App";
   }
 
+
+  
   public abrirBotoes(): void {
      this.navegacao.navigateForward('botoes')
   }

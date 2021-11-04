@@ -8,6 +8,20 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
+  <h1>Modelos</h1>
+  <ion-item>
+    <ion-label position="stacked">Digite sua pesquisa</ion-label>
+    <ion-input [(ngModel)]="pesquisa" type="text"></ion-input>
+  </ion-item>
+  <ion-button (click)="recuperar()" routerDirection="forward" expand="full" color="warning">
+    Click
+  </ion-button>
+  
+  <br>
+  {{ resultado }}
+  <br>
+
+  
   <h1>Navegação</h1>
   
   <ion-grid fixed>

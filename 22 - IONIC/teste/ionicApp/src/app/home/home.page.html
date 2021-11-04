@@ -8,7 +8,37 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
-  <!--Botões
+
+  
+
+    <!--
+
+  <h1>{{ titulo }}</h1>
+
+  <h4>Event Binding</h4>
+
+  <ion-item>
+    <ion-label position="stacked">Nome:</ion-label>
+    <ion-input (input)="atualiza()" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Nome:</ion-label>
+    <ion-input (click)="normaliza()"></ion-input>
+  </ion-item>
+
+  <h4>String interpolation</h4>
+
+  {{ 2 + 2 }}
+ <br>
+  
+
+  <ion-img src="{{ imagemLocal }}"></ion-img>
+
+
+  <h4>Propety Binding</h4>
+
+  <ion-img [src]="imagemRandomica"></ion-img>
+
 
   <h1>Grid</h1>
 

@@ -1,13 +1,19 @@
-import { Component } from '@angular/core';
+//import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { Component, OnInit } from '@angular/core';
+import { UrlTree } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
-  constructor() {}
+  constructor(private navegacao: NavController) {}
+
+  ngOnInit() {
+  }
 
   public titulo: String = "Meu primeiro App";
 
@@ -15,10 +21,20 @@ export class HomePage {
   public imagemLocal: String = "../assets/icone-celular.png";
 
   public atualiza(): void {
-    this.titulo = "Texto alterado. "
+    this.titulo = "Texto alterado. ";
   }
   public normaliza(): void {
-    this.titulo = "Meu primeiro App"
+    this.titulo = "Meu primeiro App";
+  }
+
+  public abrirBotoes(): void {
+     this.navegacao.navigateForward('botoes')
+  }
+
+  // Ou
+
+  abrirLista(){
+    this.navegacao.navigateForward('lista')
   }
 
 

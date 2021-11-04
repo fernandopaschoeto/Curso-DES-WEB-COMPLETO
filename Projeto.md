@@ -3,15 +3,15 @@
 
 ## Seção 20 API com Slim Framework
 
-- [ ] 532. O que irei aprender? API com Slim Framework
-- [ ] 533. Entendendo requisições e API
-- [ ] 534. Rotas com Slim
-- [ ] 535. Tipos de requisições
-- [ ] 536. Serviços e dependências
-- [ ] 537. Middleware, respostas e database
-- [ ] 538. Criando API
-- [ ] 539. Finalizando rotas
-- [ ] 540. Finalizando API
+- [x] 532. O que irei aprender? API com Slim Framework
+- [x] 533. Entendendo requisições e API
+- [x] 534. Rotas com Slim
+- [x] 535. Tipos de requisições
+- [x] 536. Serviços e dependências
+- [x] 537. Middleware, respostas e database
+- [x] 538. Criando API
+- [x] 539. Finalizando rotas
+- [x] 540. Finalizando API
 
 ## Seção 21 Sass
 
@@ -26,26 +26,26 @@
 
 ## Seção 22 IONIC
 
-- [ ] 549. O que irei aprender? IONIC
-- [ ] 550. Introdução ao IONIC
-- [ ] 551. Componentes - botões
-- [ ] 552. Componentes - listas
-- [ ] 553. Componentes - entrada de dados
-- [ ] 554. Sistema de grids
-- [ ] 555. Básico sobre Angular
-- [ ] 556. Data Binding no Angular
-- [ ] 557. Navegação & Modelo
-- [ ] 558. App Gasolina ou Álcool
+- [x] 549. O que irei aprender? IONIC
+- [x] 550. Introdução ao IONIC
+- [x] 551. Componentes - botões
+- [x] 552. Componentes - listas
+- [x] 553. Componentes - entrada de dados
+- [x] 554. Sistema de grids
+- [x] 555. Básico sobre Angular
+- [x] 556. Data Binding no Angular
+- [x] 557. Navegação & Modelo
+- [x] 558. App Gasolina ou Álcool
 
 ## Seção 23 WORDPRESS
 
-- [ ] 559. O que irei aprender? WordPress
-- [ ] 560. O que é o WordPress?
-- [ ] 561. Instalando o WordPress
-- [ ] 562. Conteúdos, temas e widgets - parte 1
-- [ ] 563. Conteúdos, temas e widgets - parte 2
-- [ ] 564. Personalização e plugins
-- [ ] 565. Usuários, comentários e configurações
-- [ ] 566. Criando páginas com Elementor
-- [ ] 567. Projeto 10 minutos exercícios - parte 1
-- [ ] 568. Projeto 10 minutos exercícios - parte 2
+- [x] 559. O que irei aprender? WordPress
+- [x] 560. O que é o WordPress?
+- [x] 561. Instalando o WordPress
+- [x] 562. Conteúdos, temas e widgets - parte 1
+- [x] 563. Conteúdos, temas e widgets - parte 2
+- [x] 564. Personalização e plugins
+- [x] 565. Usuários, comentários e configurações
+- [x] 566. Criando páginas com Elementor
+- [x] 567. Projeto 10 minutos exercícios - parte 1
+- [x] 568. Projeto 10 minutos exercícios - parte 2
